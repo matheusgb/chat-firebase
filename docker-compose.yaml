@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  frontend:
+    container_name: chat-firebase-frontend
+    restart: always
+    volumes:
+      - ./:/app
+    build: 
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
